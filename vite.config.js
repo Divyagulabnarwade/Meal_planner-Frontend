@@ -21,21 +21,3 @@ export default defineConfig({
     },
   },
 });
-  plugins: [react()],
-  resolve: {
-    preserveSymlinks: true,
-  },
-  server: {
-    port: 3000,
-    host: true,
-    fs: {
-      strict: false,
-    },
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8080',
-        changeOrigin: true,
-      }
-    }
-  }
-});
