@@ -18,7 +18,7 @@ import Pantry from './pages/Pantry';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Meal_planner-Frontend">
       <AuthProvider>
         <ToastProvider>
           <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
