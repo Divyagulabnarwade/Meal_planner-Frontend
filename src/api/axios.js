@@ -28,7 +28,7 @@ api.interceptors.response.use(
       localStorage.removeItem('token');
       localStorage.removeItem('user');
       if (window.location.pathname !== '/login' && window.location.pathname !== '/register') {
-        window.location.href = '/login?expired=true';
+        window.location.href = '/Meal_planner-Frontend/login?expired=true';
       }
     }
     return Promise.reject(error);
