@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/Meal_planner-Frontend/',
+  base: process.env.VERCEL ? '/' : '/Meal_planner-Frontend/',
   plugins: [react()],
   resolve: {
     preserveSymlinks: true,
